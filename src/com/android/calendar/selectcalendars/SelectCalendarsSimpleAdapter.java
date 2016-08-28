@@ -32,7 +32,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.BaseAdapter;
-import android.widget.CheckBox;
+import android.widget.Switch;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
@@ -278,11 +278,11 @@ public class SelectCalendarsSimpleAdapter extends BaseAdapter implements ListAda
         }
         calendarName.setTextColor(textColor);
 
-        CheckBox syncCheckBox = (CheckBox) view.findViewById(R.id.sync);
-        if (syncCheckBox != null) {
+        Switch syncSwitch = (Switch) view.findViewById(R.id.sync);
+        if (syncSwitch != null) {
 
             // Full screen layout
-            syncCheckBox.setChecked(selected);
+            syncSwitch.setChecked(selected);
 
             colorView.setEnabled(hasMoreColors(position));
             LayoutParams layoutParam = calendarName.getLayoutParams();
@@ -318,9 +318,9 @@ public class SelectCalendarsSimpleAdapter extends BaseAdapter implements ListAda
                 newParams.height = NORMAL_ITEM_HEIGHT;
             }
             view.setLayoutParams(newParams);
-            CheckBox visibleCheckBox = (CheckBox) view.findViewById(R.id.visible_check_box);
-            if (visibleCheckBox != null) {
-                visibleCheckBox.setChecked(selected);
+            Switch visibleSwitch = (Switch) view.findViewById(R.id.visible_check_box);
+            if (visibleSwitch != null) {
+                visibleSwitch.setChecked(selected);
             }
         }
         view.invalidate();

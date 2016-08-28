@@ -37,7 +37,7 @@ import android.view.TouchDelegate;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
+import android.widget.Switch;
 import android.widget.CursorTreeAdapter;
 import android.widget.TextView;
 
@@ -187,7 +187,7 @@ public class SelectSyncedCalendarsMultiAccountAdapter extends CursorTreeAdapter 
     /**
      * Method for changing the sync state when a calendar's button is pressed.
      *
-     * This gets called when the CheckBox for a calendar is clicked. It toggles
+     * This gets called when the Switch for a calendar is clicked. It toggles
      * the sync state for the associated calendar and saves a change of state to
      * a hashmap. It also compares against the original value and removes any
      * changes from the hashmap if this is back at its initial state.
@@ -211,7 +211,7 @@ public class SelectSyncedCalendarsMultiAccountAdapter extends CursorTreeAdapter 
             mCalendarChanges.put(id, newState);
         }
 
-        ((CheckBox) v.getTag(TAG_ID_SYNC_CHECKBOX)).setChecked(newState);
+        ((Switch) v.getTag(TAG_ID_SYNC_CHECKBOX)).setChecked(newState);
         setText(v, R.id.status, newState ? mSyncedText : mNotSyncedText);
     }
 
@@ -375,7 +375,7 @@ public class SelectSyncedCalendarsMultiAccountAdapter extends CursorTreeAdapter 
             mCalendarInitialStates.put(id, sync);
         }
 
-        CheckBox button = (CheckBox) view.findViewById(R.id.sync);
+        Switch button = (Switch) view.findViewById(R.id.sync);
         button.setChecked(sync);
         setText(view, R.id.status, sync ? mSyncedText : mNotSyncedText);
 
