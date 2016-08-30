@@ -68,7 +68,7 @@
     <item quantity="one">1 min</item>
     <!-- This is the label for 2 or more minutes. The actual number of
              minutes is a parameter. -->
-    <item quantity="other"><xliff:g id="Count_1">%d</xliff:g> min</item>
+    <item quantity="other"><xliff:g id="Count_1">%d</xliff:g> mins</item>
   </plurals>
   <!-- This is the number of hours displayed for a calendar reminder.  For example,
          a reminder of 1 hour would be displayed as '1 hour'.  The translation
