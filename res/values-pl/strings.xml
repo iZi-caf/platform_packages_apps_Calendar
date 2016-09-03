@@ -18,6 +18,7 @@
   <!-- This is the label underneath the icon for Calendar -->
   <string name="app_label">Kalendarz</string>
   <!-- on permission of read_calendar -->
+  <string name="on_permission_read_calendar">Wyłączyłeś wymagane uprawnienia.</string>
   <!-- Shared Labels. These labels are shared among the activities. -->
   <!-- This is the label for the title or name of an event -->
   <string name="what_label">Co</string>
@@ -49,7 +50,16 @@
   <!-- Title of event when no explicit title is specified by the user -->
   <string name="no_title_label">(Bez tytułu)</string>
   <!-- No google map in phone -->
+  <string name="no_map">Telefon nie może znaleźć mapy</string>
   <!-- Reminder format strings -->
+  <plurals name="Nminutes">
+    <!-- This is the label for a 1-minute reminder. -->
+    <item quantity="one">1 minuta</item>
+    <item quantity="few"><xliff:g id="Count">%d</xliff:g> minuty</item>
+    <!-- This is the label for 2 or more minutes. The actual number of
+             minutes is a parameter. -->
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> minut</item>
+  </plurals>
   <!-- We use the abbreviation "mins" instead of "minutes" to keep the string short.
          This is the number of minutes displayed for a calendar reminder.  For example,
          a reminder of 10 minutes would be displayed as '10 mins'.  The translation
