@@ -18,6 +18,7 @@
   <!-- This is the label underneath the icon for Calendar -->
   <string name="app_label">日历</string>
   <!-- on permission of read_calendar -->
+  <string name="on_permission_read_calendar">您已禁用所需的权限。</string>
   <!-- Shared Labels. These labels are shared among the activities. -->
   <!-- This is the label for the title or name of an event -->
   <string name="what_label">内容</string>
@@ -189,6 +190,7 @@
   <!-- Toast message displayed when an existing event with guests is saved after being modified -->
   <string name="saving_event_with_guest">"即将发送更新。"</string>
   <!-- Toast message displayed when ics file to share an event can't be generated -->
+  <string name="error_generating_ics">"分享时出现问题"</string>
   <!-- Toast message displayed responding to an event from an email as accepted
      [CHAR LIMIT=50] -->
   <string name="rsvp_accepted">"已回复“会参加”。"</string>
@@ -338,6 +340,7 @@
   <!-- This is a menu button for switching into edit mode when viewing an event.
         [CHAR LIMIT=10] -->
   <string name="edit_label">"编辑"</string>
+  <string name="share_label">"分享"</string>
   <!-- The button label for deleting an event -->
   <string name="delete_label">"删除"</string>
   <!-- A menu item for deleting an event -->
@@ -480,6 +483,7 @@
   <!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
   <string name="preferences_home_tz_title">家里时区</string>
   <!-- DO NOT TRANSLATE -->
+  <string name="preferences_home_tz_default">美国/洛杉矶</string>
   <!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
   <string name="preferences_show_week_num_title">显示周数</string>
   <!-- This is the title of a section in the Settings screen for "About" this application -->
